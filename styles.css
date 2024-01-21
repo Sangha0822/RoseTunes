@@ -72,11 +72,16 @@ body {
 
 
 #contentHome,
-#contentTopArtists,
-#contentEmpowerment,
-#contentHiddenGem {
+#contentTopArtists {
   margin-top: 2%;
   padding: 0%;
+}
+
+#contentEmpowerment,
+#contentHiddenGem{
+  margin-top: 5%;
+  text-align: center;
+  padding:0%;
 }
 
 ul {
