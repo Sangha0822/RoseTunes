@@ -72,13 +72,14 @@ body {
 
 #contentHome,
 #contentTopArtists {
-  margin-top: 2%;
+  margin-top: 5%;
   padding: 0%;
+  max-width: 100%;
 }
 
 #contentEmpowerment,
 #contentHiddenGem{
-  margin-top: 5%;
+  margin-top: 4%;
   text-align: center;
   padding:0%;
 }
