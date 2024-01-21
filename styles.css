@@ -11,7 +11,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f5dcee; /* Optional: Add a background color if needed /
+  background-color: #f5dcee; /* Optional: Add a background color if needed */
   z-index: 1000; 
   padding: 10px; 
 }
@@ -69,7 +69,7 @@ body {
    margin-right:auto;
 }
 
-/ Adjust the margin and padding as needed for content sections */
+
 #contentHome,
 #contentTopArtists,
 #contentEmpowerment,
