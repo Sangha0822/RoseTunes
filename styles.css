@@ -21,16 +21,17 @@ body {
   border: none;
   background: #f5dcee;
   outline: none;
-  margin-right: 10vh;
+  margin-right: 0%;
 }
 
 
 
 .logoTop {
   max-width: 100%;
-  height: 100px;
+  height: 110px;
   padding: 0;
   margin-top: auto;
+  margin-left: 20%;
 }
 
 .button:hover {
@@ -44,48 +45,38 @@ body {
 }
 
 .buttonHome {
-  width: 20vh;
+  width: 55%;
   height: auto;
-  margin-left: 5vh;
+  margin-left: 25%;
 }
 
 .buttonTopArtists
 {
-  width: 40vh;
+  width: 65%;
   height: auto;
-   margin-right:auto;
+  margin-right:20%;
 
 } 
 
 .buttonEmpowerment{
-  width: 33vh;
+  width: 65%;
   height: auto;
-   margin-right:auto;
+  margin-right: 0%;
 } 
 
 .buttonHidden {
-  width: 30vh;
+  width: 65%;
   height: auto;
-   margin-right:auto;
+  margin-right:-10%;
 }
 
 
 #contentHome,
-#contentTopArtists{
-  margin-top: -3vh;
-  padding: 0vh;
-}
-
-#contentEmpowerment {
-  text-align: center;
-  margin-top: 12vh;
-  padding: 0vh;
-}
-
+#contentTopArtists,
+#contentEmpowerment,
 #contentHiddenGem {
-  text-align: center;
-  margin-top: 12vh;
-  padding: 0vh;
+  margin-top: 2%;
+  padding: 0%;
 }
 
 ul {
@@ -98,14 +89,14 @@ li {
 }
 
 li:first-child {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 img{
   display: block;
   margin: 0 auto;
   /* Make image bigger */
-  max-width: 85%;
+  max-width: 1000 px;
   height: auto
 }
 
