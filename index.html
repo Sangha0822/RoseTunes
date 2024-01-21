@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> RoseTunes </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+
+    <button class="button" onclick="showContent('contentHome')">
+        <img class="buttonHome" src="home.png" alt="Home Image">
+    </button>
+
+    <button class="button" onclick="showContent('contentTopArtits')">
+        <img class="buttonTopArtists" src="topArtists.png" alt="Top Artists Image">
+    </button>
+
+    <button class="button" onclick="showContent('contentEmpowerment')">
+        <img class="buttonEmpowerment" src="empowerment.png" alt="Empowerment Image">
+    </button>
+
+    <button class="button" onclick="showContent('contentHiddenGem')">
+        <img class="buttonHidden" src="hidden gems.png" alt="Hidden Gem Image">
+    </button>
+
+
+
+
+    
+    <div id="contentHome">
+        <br><br>
+        hello
+    </div>
+
+    <div id="contentTopArtits" style="display: none;">
+        <br><br>
+        hello2
+    </div>
+
+    <div id="contentEmpowerment" style="display: none;">
+        <br><br>
+        hello3
+    </div>
+
+    <div id="contentHiddenGem" style="display: none;">
+        <br><br>
+        hello4
+    </div>
+
+
+    <script>
+        function showContent(contentID) {
+            hideAllContent();
+            document.getElementById(contentID).style.display = "block";
+        }
+
+        function hideAllContent() {
+            var contentDivs = document.querySelectorAll('[id^="content"]');
+            contentDivs.forEach(function (div) {
+                div.style.display = "none";
+            });
+        }
+    </script>
+</body>
