@@ -1,93 +1,75 @@
 body {
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: 'JelleeBold';
-   font-weight: normal;
-   font-style: normal;
-
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   margin: 0;
   height: 100vh;
-  background: linear-gradient(to bottom, #f5dcee 15%, #e9b5de 15%, #e9b5de 85%);
-}
-
-p {
-  font-family: 'RoundoRegular';
-   font-weight: normal;
-   font-style: normal;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: #e9b5de;
-  z-index: -2; /* Place it behind the content */
 }
 
-body::after {
-  content: "";
+.fixedButtonsContainer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 20%;
-  background: #f5dcee;
-  z-index: -1; /* Place it above the main background */
+  background-color: #f5dcee; /* Optional: Add a background color if needed /
+  z-index: 1000; 
+  padding: 10px; 
 }
 
 .button {
   cursor: pointer;
   border: none;
-  background: none;
+  background: #f5dcee;
   outline: none;
   margin-right: 10vh;
+}
+
+
+
+.logoTop {
+  max-width: 100%;
+  height: 100px;
+  padding: 0;
+  margin-top: auto;
 }
 
 .button:hover {
   opacity: 0.7;
 }
 
-/* Add this rule to make the images inside buttons responsive */
 .button img {
   max-width: 100%;
   max-height: 100%;
   display: block;
 }
 
-.buttonHome{
-  width: 20vh; 
-  height: 8vh; 
-  margin-left: 11vh;
+.buttonHome {
+  width: 20vh;
+  height: auto;
+  margin-left: 5vh;
 }
 
-.buttonTopArtists{
-  width: 35vh; 
-  height: 8vh; 
+.buttonTopArtists
+{
+  width: 40vh;
+  height: auto;
+   margin-right:auto;
 
-}
+} 
+
 .buttonEmpowerment{
-  width: 35vh; 
-  height: 8vh; 
- 
-}
-.buttonHidden{
-  width: 30vh; 
-  height: 8vh; 
-  
+  width: 33vh;
+  height: auto;
+   margin-right:auto;
+} 
+
+.buttonHidden {
+  width: 30vh;
+  height: auto;
+   margin-right:auto;
 }
 
-.logoTop {
-  width: 100px;
-  height: 11vh;
-  padding: 0;
-  margin-top: 1vh;
-  margin-right: 11vh;
-}
-
-/* Adjust the margin and padding as needed for content sections */
+/ Adjust the margin and padding as needed for content sections */
 #contentHome,
 #contentTopArtists,
 #contentEmpowerment,
@@ -95,8 +77,6 @@ body::after {
   margin-top: -1vh;
   padding: 0vh;
 }
-
-
 
 li {
   margin: 5px 0;
@@ -106,5 +86,5 @@ li {
 img {
   margin-right: 10px;
   max-width: 50px;
-  height: auto
+  height: auto;
 }
