@@ -98,7 +98,7 @@ app.get('/callback', async (req, res) => {
     const authorizationCode = req.query.code;
 
     if (authorizationCode) {
-        const codeVerifier = localStorage.getItem('code_verifier');
+        /*const codeVerifier = localStorage.getItem('code_verifier');
         const payload = {
             method: 'POST',
             headers: {
@@ -120,7 +120,9 @@ app.get('/callback', async (req, res) => {
             console.log('Access Token:', tokenData.access_token);
         } catch (error) {
             console.error('Error getting access token:', error.message);
-        }
+        }*/
+        await getToken(authorizationCode);
+
 
         // Use __dirname to construct the file path
         res.sendFile(__dirname + '/success.html');
@@ -129,6 +131,32 @@ app.get('/callback', async (req, res) => {
         res.status(400).send('Bad Request');
     }
 });
+
+const getToken = async code => {
+    console.log("getToken accessed");
+    // stored in the previous step
+    let codeVerifier = localStorage.getItem('code_verifier');
+  
+    const payload = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        client_id: clientId,
+        grant_type: 'authorization_code',
+        code,
+        redirect_uri: redirectUri,
+        code_verifier: codeVerifier,
+      }),
+    }
+  
+    const body = await fetch(tokenUrl, payload);
+    const response =await body.json();
+  
+    localStorage.setItem('access_token', response.access_token);
+  }
+
 
 const port = 8080;
 
