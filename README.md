@@ -3,7 +3,7 @@ Rose Hack Hackathon for Women's tech 2024
 > Authors:
 > Avia Bequette ([https://github.com/aviamb])
 > Sangha Jeon ([https://github.com/sangha0822])
-> Dominique Masequesmay ([dmasequesmay])
+> Dominique Masequesmay ([https://github.com/dmasequesmay])
 > Cathy Wu ([https://github.com/catheiwu])
 
 ## Project Description
