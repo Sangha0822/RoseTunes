@@ -71,10 +71,20 @@ body {
 
 
 #contentHome,
-#contentTopArtists,
-#contentEmpowerment,
+#contentTopArtists{
+  margin-top: -3vh;
+  padding: 0vh;
+}
+
+#contentEmpowerment {
+  text-align: center;
+  margin-top: 12vh;
+  padding: 0vh;
+}
+
 #contentHiddenGem {
-  margin-top: -1vh;
+  text-align: center;
+  margin-top: 12vh;
   padding: 0vh;
 }
 
@@ -88,14 +98,14 @@ li {
 }
 
 li:first-child {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 img{
   display: block;
   margin: 0 auto;
   /* Make image bigger */
-  max-width: 1000 px;
+  max-width: 85%;
   height: auto
 }
 
