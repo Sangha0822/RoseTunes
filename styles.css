@@ -3,10 +3,7 @@ body {
   position: relative;
   margin: 0;
   height: 100%;
-  background: #e9b5de;
-  background-image: url("flower.gif");
-  background-repeat: no-repeat;
-  background-position: center -300%;
+  background: url("flower.gif")  0%  no-repeat, url("flower2.gif") 100% no-repeat, #e9b5de;
 }
 
 .fixedButtonsContainer {
@@ -71,14 +68,13 @@ body {
 
 #contentHome,
 #contentTopArtists {
-  margin-top: 5%;
+  margin-top: 2%;
   padding: 0%;
-  max-width: 100%;
 }
 
 #contentEmpowerment,
-#contentHiddenGem{
-  margin-top: 4%;
+#contentHiddenGem {
+  margin-top: 5%;
   text-align: center;
   padding: 0%;
 }
@@ -109,17 +105,6 @@ h2 {
 img {
   display: block;
   margin: 0 auto;
-  /* Make image bigger */
-  max-width:  60%;
-  height: auto
-}
-
-.larger-image {
-  max-width: 120%; /* Set the maximum width to 100% for images with the class "larger-image" */
-  max-height: 120%;
-}
-
-h2 {
   max-width: 70%;
   height: auto;
 }
