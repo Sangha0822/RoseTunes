@@ -78,19 +78,6 @@ body {
   padding: 0vh;
 }
 
-/*
-
-li {
-  margin: 5px 0;
-  font-size: 18px;
-}
-
-img {
-  margin-right: 10px;
-  max-width: 50px;
-  height: auto;
-} */
-
 ul {
   list-style: none;
 }
@@ -110,4 +97,8 @@ img{
   /* Make image bigger */
   max-width: 1000 px;
   height: auto
+}
+
+h2 {
+  text-align: center;
 }
