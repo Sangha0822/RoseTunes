@@ -4,6 +4,7 @@ body {
   margin: 0;
   height: 100vh;
   background: #e9b5de;
+  z-index: 1;
 }
 
 .fixedButtonsContainer {
@@ -11,8 +12,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f5dcee; /* Optional: Add a background color if needed /
-  z-index: 1000; 
+  background-color: #f5dcee; /* Optional: Add a background color if needed */
+  z-index: 1; 
   padding: 10px; 
 }
 
@@ -69,12 +70,12 @@ body {
    margin-right:auto;
 }
 
-/ Adjust the margin and padding as needed for content sections */
+
 #contentHome,
 #contentTopArtists,
 #contentEmpowerment,
 #contentHiddenGem {
-  margin-top: -1vh;
+  margin-top: 10vh;
   padding: 0vh;
 }
 
