@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: white
+    font-family: 'Lora', serif;
+}
+
+header {
+    background:#f7cfec;
+    height: 66px;
+
+}
+
+header * {
+    color: black;
+}
+
+header  .logo {
+    float: left;
+    height: inherit;
+    margin-left: 1.0em;
+    font-size: 2.5em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: 'Candal', serif;
+}
+
+header .logo-text span{
+    color: #f7cfec;
+}
+
+header  ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 120px;
+    display: none;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color: #444;
+}
+
+header ul li ul li a.logout{
+    color: red;
+}
+
+header ul li ul li a:hover{
+    background: #c293b6;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background: #c293b6;
+    transition: 0.5s;
+}
+
+header  .menu-toggle {
+    display: none;
+}
