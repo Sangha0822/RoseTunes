@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Authorization</title>
+</head>
+<body>
+    <h1>Spotify Authorization</h1>
+    <button id="loginButton">Login with Spotify</button>
+
+    <!-- Ensure clientId is defined before including main.js -->
+    <script>
+        const clientId = 'ec7338334abc4d5086411cd44a3ef2d5';
+        const redirectUri = 'http://localhost:8080/callback';
+        const tokenUrl = 'https://accounts.spotify.com/api/token'; // Spotify token endpoint
+        const apiEndpoint = 'https://api.spotify.com/v1/tracks/2TpxZ7JUBn3uw46aR7qd6V'; // Spotify API endpoint
+        const scope = 'user-read-private user-read-email';
+    </script>
+
+    <!-- Include main.js after defining clientId -->
+    <script src="/main.js"></script>
+
+</body>
+</html>
