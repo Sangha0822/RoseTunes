@@ -1,89 +1,86 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f5dcee 15%, #e9b5de 15%, #e9b5de 85%);
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e9b5de;
-  z-index: -2; /* Place it behind the content */
-}
 
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  background: #f5dcee;
-  z-index: -1; /* Place it above the main background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f5dcee 15%, #e9b5de 15%, #e9b5de 85%);
 }
-
-h2 {
-  display: inline-block;
-  margin-right: 10px;
-}
-
 
 .button {
   cursor: pointer;
   border: none;
   background: none;
   outline: none;
-  height: auto;
+  margin-right: 10vh;
 }
 
 .button:hover {
   opacity: 0.7;
 }
 
-.buttonHome {
-  width: 150px;
-  height: auto;
-  margin-right: 120px;
-  margin-top: 70px;
-  margin-left: 70px;
+/* Add this rule to make the images inside buttons responsive */
+.button img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
 }
 
-.buttonTopArtists {
-  width: 300px;
-  height: auto;
-  margin-right: 370px;
-  /* Adjust this value to your preference */
+.buttonHome{
+  width: 20vh; 
+  height: 8vh; 
+  margin-left: 11vh;
 }
 
-.buttonEmpowerment {
-  width: 250px;
-  height: auto;
-  margin-right: 100px;
-  /* Adjust this value to your preference */
+.buttonTopArtists{
+  width: 35vh; 
+  height: 8vh; 
+
+}
+.buttonEmpowerment{
+  width: 35vh; 
+  height: 8vh; 
+ 
+}
+.buttonHidden{
+  width: 30vh; 
+  height: 8vh; 
+  
 }
 
-.buttonHidden {
-  width: 220px;
-  height: auto;
-  /* Adjust this value to your preference */
+.logoTop {
+  width: 100px;
+  height: 11vh;
+  padding: 0;
+  margin-top: 1vh;
+  margin-right: 11vh;
 }
 
-#contentHome, #contentTopArtits, #contentEmpowerment, #contentHiddenGem {
-  position: relative;
-  z-index: 2; /* Ensure content appears on top of the background */
+/* Adjust the margin and padding as needed for content sections */
+#contentHome,
+#contentTopArtists,
+#contentEmpowerment,
+#contentHiddenGem {
+  margin-top: -1vh;
+  padding: 0vh;
 }
 
 
-li{
-      margin: 5px 0;
-      font-size: 18px;
+
+li {
+  margin: 5px 0;
+  font-size: 18px;
 }
 
-img{
+img {
   margin-right: 10px;
   max-width: 50px;
   height: auto
