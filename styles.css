@@ -4,7 +4,6 @@ body {
   margin: 0;
   height: 100vh;
   background: #e9b5de;
-  z-index: 1;
 }
 
 .fixedButtonsContainer {
@@ -13,7 +12,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #f5dcee; /* Optional: Add a background color if needed */
-  z-index: 1; 
+  z-index: 1000; 
   padding: 10px; 
 }
 
@@ -75,17 +74,31 @@ body {
 #contentTopArtists,
 #contentEmpowerment,
 #contentHiddenGem {
-  margin-top: 10vh;
+  margin-top: -1vh;
   padding: 0vh;
 }
 
-li {
-  margin: 5px 0;
-  font-size: 18px;
+ul {
+  list-style: none;
 }
 
-img {
-  margin-right: 10px;
-  max-width: 50px;
-  height: auto;
+li {
+  /* Space between images */
+  margin-bottom: 100px; 
+}
+
+li:first-child {
+  margin-top: 200px;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  /* Make image bigger */
+  max-width: 1000 px;
+  height: auto
+}
+
+h2 {
+  text-align: center;
 }
