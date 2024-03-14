@@ -17,3 +17,7 @@ Our landing page introduces our team and the inspiration behind this blog-style 
 ## Languages/Tools
 
 HTML, CSS, Adobe Illustrator
+
+## More Descriptions
+
+https://devpost.com/software/rosetunes
